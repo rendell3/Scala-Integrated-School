@@ -17,3 +17,16 @@
 
 <script src="assets/vendor/summernote/summernote.min.js"></script>
 <script src="assets/vendor/summernote/summernote-active.js"></script>
+<!-- Examples -->
+<script src="assets/javascripts/ui-elements/examples.modals.js"></script>
+
+<!-- Specific Page Vendor -->
+<script src="assets/vendor/select2/select2.js"></script>
+<script src="assets/vendor/jquery-datatables/media/js/jquery.dataTables.js"></script>
+<script src="assets/vendor/jquery-datatables/extras/TableTools/js/dataTables.tableTools.min.js"></script>
+<script src="assets/vendor/jquery-datatables-bs3/assets/js/datatables.js"></script>
+
+<!-- Examples -->
+		<script src="assets/javascripts/tables/examples.datatables.default.js"></script>
+		<script src="assets/javascripts/tables/examples.datatables.row.with.details.js"></script>
+		<script src="assets/javascripts/tables/examples.datatables.tabletools.js"></script>

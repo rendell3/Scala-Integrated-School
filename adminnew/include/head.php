@@ -1,5 +1,5 @@
+<?php session_start();?>
 <head>
-
 		<!-- Basic -->
 		<meta charset="UTF-8">
 
@@ -39,5 +39,10 @@
 		<!-- include summernote css/js -->
 		<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css" rel="stylesheet">
 		<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
+
+		<!-- Specific Page Vendor CSS -->
+		<link rel="stylesheet" href="assets/vendor/select2/select2.css" />
+		<link rel="stylesheet" href="assets/vendor/jquery-datatables-bs3/assets/css/datatables.css" />
+		
 
 	</head>

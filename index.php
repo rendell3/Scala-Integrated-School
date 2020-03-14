@@ -108,15 +108,14 @@ $rows =  $select->fetch();
     </div>
   </a>
 
-</div><!-- end row -->
-</div> -->
+</div>-->
+</div>
 
 <hr>
 <h1 style="text-align: center;font-family: Times New Roman, Times, serif;">-We Have The Best Instructors-</h1>
 <hr>
 <div class="row">
       <?php
-        
         $select = $conn->query("SELECT * FROM tblschoolpersonnel ORDER BY RAND() LIMIT 4");
         while ($rows = $select->fetch()) {
           ?>
@@ -124,7 +123,7 @@ $rows =  $select->fetch();
         <div class="large-3 columns">
 
           <div class="hovereffect" style="margin-bottom: 20px;">
-            <img src="admin/uploadfiles/<?php echo $rows['IMAGE'];?>" alt="<?php echo $rows['IMAGE'];?>">
+            <img src="adminnew/uploadfiles/<?php echo $rows['IMAGE'];?>" alt="<?php echo $rows['IMAGE'];?>">
           </div>
 
           <h5 style="font-weight: bold;font-size: 20px;text-align: center;font-family: Times New Roman, Times, serif;"><?php echo $rows['LASTNAME'].','.$rows['FIRSTNAME'].' '.$rows['MIDDLENAME'];?><br/>

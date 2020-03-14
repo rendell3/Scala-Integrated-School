@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html class="fixed">
 	<head>
@@ -33,6 +34,9 @@
 		<!-- Head Libs -->
 		<script src="assets/vendor/modernizr/modernizr.js"></script>
 
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		
+
 	</head>
 	<body>
 		<!-- start: page -->
@@ -47,11 +51,11 @@
 						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Sign In</h2>
 					</div>
 					<div class="panel-body">
-						<form action="index.html" method="post">
+						<form id="loginForm"  method="post">
 							<div class="form-group mb-lg">
 								<label>Username</label>
 								<div class="input-group input-group-icon">
-									<input name="username" type="text" class="form-control input-lg" />
+									<input name="username" id="username" type="text" class="form-control input-lg" />
 									<span class="input-group-addon">
 										<span class="icon icon-lg">
 											<i class="fa fa-user"></i>
@@ -63,10 +67,10 @@
 							<div class="form-group mb-lg">
 								<div class="clearfix">
 									<label class="pull-left">Password</label>
-									<a href="pages-recover-password.html" class="pull-right">Lost Password?</a>
+									<!-- <a href="pages-recover-password.html" class="pull-right">Lost Password?</a> -->
 								</div>
 								<div class="input-group input-group-icon">
-									<input name="pwd" type="password" class="form-control input-lg" />
+									<input name="password" id="password" type="password" class="form-control input-lg" />
 									<span class="input-group-addon">
 										<span class="icon icon-lg">
 											<i class="fa fa-lock"></i>
@@ -77,17 +81,15 @@
 
 							<div class="row">
 								<div class="col-sm-8">
-									<div class="checkbox-custom checkbox-default">
-										<input id="RememberMe" name="rememberme" type="checkbox"/>
-										<label for="RememberMe">Remember Me</label>
-									</div>
+									<div class="g-recaptcha" data-sitekey="6LfMltIUAAAAADILJDJNr5z-zLv4kdCk3PZySdGs"></div>
 								</div>
 								<div class="col-sm-4 text-right">
-									<button type="submit" class="btn btn-primary hidden-xs">Sign In</button>
+									<button type="button" class="btn btn-primary hidden-xs loginbtn">Sign In</button>
 									<button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">Sign In</button>
 								</div>
 							</div>
-
+							<br/>
+							<div class="result"></div>
 						</form>
 					</div>
 				</div>
@@ -117,3 +119,18 @@
 
 	</body>
 </html>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".loginbtn").click(function(){
+       var loginForm = $("#loginForm").serialize();
+        // alert(loginForm);
+        $.ajax({
+                url: "userprograms/login.php",
+                type :"POST",
+                data:loginForm,
+                success: function(result){
+                    $(".result").html(result);
+        }});
+    });
+});
+</script>

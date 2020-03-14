@@ -13,93 +13,87 @@
 		<div class="nano-content">
 			<nav id="menu" class="nav-main" role="navigation">
 				<ul class="nav nav-main">
-					<li>
-						<a href="index.html">
-							<i class="fa fa-home" aria-hidden="true"></i>
-							<span>Dashboard</span>
-						</a>
-					</li>
 
 					<li>
 						<a href="entry?type=history">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-file-text" aria-hidden="true"></i>
 							<span>History</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=missionvision">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
 							<span>Mission & Vision</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=contact">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-phone" aria-hidden="true"></i>
 							<span>Contact Details</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=schoolpersonnel">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-users" aria-hidden="true"></i>
 							<span>School Personnel</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=messageprinc">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-edit" aria-hidden="true"></i>
 							<span>Principal Message</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=gallery">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-trello" aria-hidden="true"></i>
 							<span>Gallery</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=awardsaccomplishment">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-trophy" aria-hidden="true"></i>
 							<span>Awards and Accomplishment</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=programproj">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-list-alt" aria-hidden="true"></i>
 							<span>Programs and Projects</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=newsandupdtes">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-recycle" aria-hidden="true"></i>
 							<span>News and Updates</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=events">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-bookmark" aria-hidden="true"></i>
 							<span>Events</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=announcements">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-bullhorn" aria-hidden="true"></i>
 							<span>Announcements</span>
 						</a>
 					</li>
 
 					<li>
 						<a href="entry?type=memoranda">
-							<i class="fa fa-home" aria-hidden="true"></i>
+							<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
 							<span>Memoranda</span>
 						</a>
 					</li>

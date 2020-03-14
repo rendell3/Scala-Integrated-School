@@ -29,7 +29,7 @@
           ?>
         <div class="large-3 columns">
           <div class="hovereffect" style="margin-bottom: 20px;">
-            <img src="admin/uploadfiles/<?php echo $rows['IMAGE'];?>" alt="<?php echo $rows['IMAGE'];?>">
+            <img src="adminnew/uploadfiles/<?php echo $rows['IMAGE'];?>" alt="<?php echo $rows['IMAGE'];?>">
           </div>
         </div>
 
